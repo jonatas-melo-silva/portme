@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --color-brand: #FFBD48;
+
+  --color-border: #FFF5DE;
+  --color-shape: #FEFBF4;
+
+  --color-dark-10: #2E2E2E;
+  --color-dark-30: #FFFFFF;
+
+  --font-inter: 'Inter', sans-serif;
+}
+
+@theme inline {
+  --color-brand: var(--color-brand);
+  --color-border: var(--color-border);
+  --color-shape: var(--color-shape);
+
+  --color-dark-10: var(--color-dark-10);
+  --color-dark-30: var(--color-dark-30);
+
+  --font-inter: var(--font-inter);
+
+  --default-font-family: var(--font-inter);
+}
+
+@theme {
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 96rem;
+  --breakpoint-3xl: 120rem;
+}

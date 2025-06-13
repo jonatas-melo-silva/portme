@@ -1,0 +1,18 @@
+{
+  "name": "portme",
+  "version": "1.0.0",
+  "description": "A page with my projects, professional experience, summary and social networks.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watch",
+    "build": "npx tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --minify"
+  },
+  "keywords": [],
+  "author": "Jonatas Melo Silva",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.10",
+    "tailwindcss": "^4.1.10"
+  }
+}
