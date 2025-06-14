@@ -8,13 +8,57 @@
     content="Portme - A page with my projects, professional experience, summary and social networks.">
   <meta name="description"
     content="Portme - Uma página com meus projetos, experiência profissional, resumo e redes sociais.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Preahvihear&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./src/styles/output.css">
   <title>Portme</title>
 </head>
 
 <body>
-  <h1>Bem-vindo ao Portme</h1>
-  <p>Sua solução única para gerenciar seus projetos, experiência profissional, resumo e redes sociais.</p>
+  <div class="container mx-auto px-6">
+    <header class="@container/header w-full flex items-center justify-between py-6">
+      <div class="w-full flex items-center justify-start">
+        <a class="w-fit text-2xl text-primary font-preahvihear" href="#home">Jonatas Melo</a>
+      </div>
+
+      <nav class="@container/navigation w-full lg:flex items-center justify-end hidden">
+        <ul class="w-fit h-fit flex items-center justify-center gap-14 text-sm text-foreground font-inter">
+          <li><a class="btn btn--link text-foreground hover:text-primary" href="#home">Home</a></li>
+          <li><a class="btn btn--link text-foreground hover:text-primary" href="#about">Sobre mim</a></li>
+          <li><a class="btn btn--link text-foreground hover:text-primary" href="#experience">Experiência</a>
+          </li>
+          <li><a class="btn btn--link text-foreground hover:text-primary" href="#projects">Projetos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="separator separator--horizontal"></div>
+
+    <section id="home"
+      class="@container/banner w-full flex flex-col-reverse sm:flex-row items-center justify-between gap-8 py-2 sm:py-36">
+      <div class="@container/banner-content w-full lg:w-2/4 flex flex-col items-center sm:items-end gap-12">
+        <div class="@container/banner-text w-full space-y-4 text-center sm:text-end">
+          <p class="text-xl sm:text-2xl font-medium">Olá, eu sou</p>
+          <h1 class="text-primary text-4xl sm:text-5xl font-preahvihear">Jonatas Melo</h1>
+          <p class="text-xl sm:text-2xl font-medium">Desenvolvedor <i>Front-end</i> & <i>UI/UX</i></p>
+        </div>
+
+        <a class="btn btn--default btn--lg capitalize font-semibold px-10 w-full sm:w-fit"
+          href="https://linkedin.com/in/jonatas-melo-silva" target="_blank" rel="noopener noreferrer">linkedin</a>
+      </div>
+
+      <div class="@container/image w-full lg:w-2/4 flex items-center justify-center sm:justify-start">
+        <div data-slot="avatar" class="avatar rounded-4xl size-50 sm:size-[264px] lg:size-100">
+          <img data-slot="avatar-image"
+            class="avatar--image rounded-4xl border-8 border-border object-cover object-center"
+            src="https://avatars.githubusercontent.com/u/28713622?v=4" alt="Imagem de Jonatas Melo">
+        </div>
+      </div>
+    </section>
+    </span>
 </body>
 
 </html>
