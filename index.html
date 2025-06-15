@@ -1,64 +1,258 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dev & UX/UI - A page with my projects, professional experience, about, goals, social networks and CV."
+    />
+    <meta
+      name="description"
+      content="Dev & UX/UI -  Uma página com meus projetos, experiência profissional, sobre, objetivos, redes sociais e CV."
+    />
+    <meta name="author" content="Jonatas Melo" />
+    <meta name="keywords" content="Dev, UX/UI, Front-end, Jonatas Melo" />
+    <meta name="theme-color" content="#A48FFF" />
+    <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Preahvihear&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/output.css" />
+    <title>Dev & UX/UI</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Portme - A page with my projects, professional experience, summary and social networks.">
-  <meta name="description"
-    content="Portme - Uma página com meus projetos, experiência profissional, resumo e redes sociais.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Preahvihear&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./src/styles/output.css">
-  <title>Portme</title>
-</head>
+  <body class="min-h-lvh max-w-lvw antialiased bg-background text-foreground">
+    <header class="container mx-auto px-6">
+      <section
+        class="@container/header w-full h-20 flex items-center justify-between py-6"
+      >
+        <div class="w-full flex items-center justify-start">
+          <a
+            class="text-2xl text-primary font-preahvihear btn"
+            href="#home"
+            >Dev &<strong><em> UX/UI</em></strong></a
+          >
+        </div>
 
-<body>
-  <div class="container mx-auto px-6">
-    <header class="@container/header w-full flex items-center justify-between py-6">
-      <div class="w-full flex items-center justify-start">
-        <a class="w-fit text-2xl text-primary font-preahvihear" href="#home">Jonatas Melo</a>
-      </div>
-
-      <nav class="@container/navigation w-full lg:flex items-center justify-end hidden">
-        <ul class="w-fit h-fit flex items-center justify-center gap-14 text-sm text-foreground font-inter">
-          <li><a class="btn btn--link text-foreground hover:text-primary" href="#home">Home</a></li>
-          <li><a class="btn btn--link text-foreground hover:text-primary" href="#about">Sobre mim</a></li>
-          <li><a class="btn btn--link text-foreground hover:text-primary" href="#experience">Experiência</a>
-          </li>
-          <li><a class="btn btn--link text-foreground hover:text-primary" href="#projects">Projetos</a></li>
-        </ul>
-      </nav>
+        <nav
+          class="@container/navigation w-full lg:flex items-center justify-end hidden"
+        >
+          <ul
+            class="w-fit h-fit flex items-center justify-center gap-14 text-sm text-foreground font-inter"
+          >
+            <li>
+              <a
+                class="btn btn--link text-foreground hover:text-primary"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="btn btn--link text-foreground hover:text-primary"
+                href="#about"
+                >Sobre mim</a
+              >
+            </li>
+            <li>
+              <a
+                class="btn btn--link text-foreground hover:text-primary"
+                href="#experience"
+                >Experiência</a
+              >
+            </li>
+            <li>
+              <a
+                class="btn btn--link text-foreground hover:text-primary"
+                href="#projects"
+                >Projetos</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
     </header>
 
-    <div class="separator separator--horizontal"></div>
+    <div class="container mx-auto px-6">
+      <div class="separator separator--horizontal"></div>
+    </div>
 
-    <section id="home"
-      class="@container/banner w-full flex flex-col-reverse sm:flex-row items-center justify-between gap-8 py-2 sm:py-36">
-      <div class="@container/banner-content w-full lg:w-2/4 flex flex-col items-center sm:items-end gap-12">
-        <div class="@container/banner-text w-full space-y-4 text-center sm:text-end">
-          <p class="text-xl sm:text-2xl font-medium">Olá, eu sou</p>
-          <h1 class="text-primary text-4xl sm:text-5xl font-preahvihear">Jonatas Melo</h1>
-          <p class="text-xl sm:text-2xl font-medium">Desenvolvedor <i>Front-end</i> & <i>UI/UX</i></p>
+    <!-- h-[calc(100vh-5rem)] sm:h-[calc(100vh-12rem)] surface:h-[calc(100vh-6rem)] -->
+
+    <main
+      class="container mx-auto h-full flex flex-col items-center justify-center px-6"
+    >
+      <section
+        id="home"
+        class="@container/banner w-full flex flex-col-reverse sm:flex-row items-center justify-center py-12 sm:py-24 gap-8"
+        data-slot="banner"
+      >
+        <div
+          class="@container/banner-content w-full lg:w-2/4 flex flex-col items-center sm:items-end gap-12"
+        >
+          <div
+            class="@container/banner-text w-full space-y-4 text-center sm:text-end"
+          >
+            <p class="text-xl sm:text-2xl font-medium">Olá, eu sou</p>
+            <h1 class="text-primary text-4xl sm:text-5xl font-preahvihear">
+              Jonatas Melo
+            </h1>
+            <p class="text-xl sm:text-2xl font-medium">
+              Desenvolvedor <strong><em>Front-end</em></strong> &
+              <strong><em>UX/UI</em></strong>
+            </p>
+          </div>
+
+          <a
+            class="btn btn--default btn--lg capitalize font-semibold px-10 w-full sm:w-fit"
+            href="https://linkedin.com/in/jonatas-melo-silva"
+            target="_blank"
+            rel="noopener noreferrer"
+            >linkedin</a
+          >
         </div>
 
-        <a class="btn btn--default btn--lg capitalize font-semibold px-10 w-full sm:w-fit"
-          href="https://linkedin.com/in/jonatas-melo-silva" target="_blank" rel="noopener noreferrer">linkedin</a>
-      </div>
-
-      <div class="@container/image w-full lg:w-2/4 flex items-center justify-center sm:justify-start">
-        <div data-slot="avatar" class="avatar rounded-4xl size-50 sm:size-[264px] lg:size-100">
-          <img data-slot="avatar-image"
-            class="avatar--image rounded-4xl border-8 border-border object-cover object-center"
-            src="https://avatars.githubusercontent.com/u/28713622?v=4" alt="Imagem de Jonatas Melo">
+        <div
+          class="@container/image w-full lg:w-2/4 flex items-center justify-center sm:justify-start"
+        >
+          <div
+            data-slot="avatar"
+            class="avatar rounded-4xl size-50 sm:size-[264px] lg:size-100"
+          >
+            <img
+              data-slot="avatar-image"
+              class="avatar--image rounded-4xl border-8 border-border object-cover object-center"
+              src="./src/assets/image-avatar.svg"
+              alt="Imagem de Jonatas Melo"
+            />
+          </div>
         </div>
-      </div>
-    </section>
-    </span>
-</body>
+      </section>
 
+      <div class="separator separator--horizontal"></div>
+
+      <section
+        id="about"
+        class="@container/about w-full flex items-center justify-center py-12 sm:py-24 gap-8"
+        data-slot="about"
+      >
+        <div
+          class="@container/about w-full flex flex-col items-center justify-center gap-12"
+        >
+          <div
+            class="@container/about-content w-full flex flex-col items-center justify-center gap-12"
+          >
+            <div
+              class="@container/about-text w-full flex flex-col items-start justify-start gap-6.5"
+            >
+              <h2 class="text-primary text-3xl font-normal font-preahvihear">
+                Sobre mim
+              </h2>
+              <span class="text-muted-foreground text-xl font-medium font-sans"
+                >Macaíba–RN, Brasil</span
+              >
+              <p
+                class="text-muted-foreground text-xl font-normal font-sans leading-relaxed"
+              >
+                <strong>Desenvolvedor <em>Front-end</em></strong> com foco em
+                <strong><em>UX/UI</em></strong
+                >. Busco atuar no desenvolvimento de interfaces modernas,
+                responsivas e acessíveis, aplicando, princípios de experiência
+                do usuário e consistência visual. Possuo experiência na tradução
+                de <strong><em>layouts</em></strong
+                >, <strong><em>wireframes</em></strong> e
+                <strong><em>protótipos</em></strong> em código funcional
+                utilizando <strong><em>HTML</em></strong
+                >, <strong><em>CSS</em></strong
+                >, <strong><em>JavaScript</em></strong> e frameworks como
+                <strong><em>React</em></strong> e
+                <strong><em>Next.js</em></strong
+                >. Experiência na otimização de performance e colaboração
+                próxima com <strong><em>designers</em></strong> e equipes de
+                <strong><em>backend</em></strong> para construir soluções coesas
+                e centradas no usuário.
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-full flex flex-col sm:flex-row items-center justify-center gap-8"
+          >
+            <div
+              class="@container/about-social w-full flex items-center justify-center"
+            >
+              <ul
+                class="w-full flex items-center justify-center sm:items-center sm:justify-start gap-4"
+              >
+                <li>
+                  <a
+                    class="btn btn--icon"
+                    href="https://www.linkedin.com/in/jonatas-melo-silva/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      class="w-6 h-6"
+                      src="./src/assets/icone-linkedin.svg"
+                      alt="Ícone LinkedIn"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    class="btn btn--icon"
+                    href="https://github.com/jonatas-melo-silva"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      class="w-6 h-6"
+                      src="./src/assets/icone-github.svg"
+                      alt="Ícone GitHub"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    class="btn btn--icon"
+                    href="https://www.instagram.com/jonatas_melo_silva/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      class="w-6 h-6"
+                      src="./src/assets/icone-instagram.svg"
+                      alt="Ícone Instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    class="btn btn--icon"
+                    href="https://x.com/JonatasMeloSil3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      class="w-6 h-6"
+                      src="./src/assets/icone-twitter.svg"
+                      alt="Ícone Twitter"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="@container/about-download-cv w-full flex items-start justify-start sm:items-center sm:justify-end"
+            >
+              <a
+                class="btn btn--default btn--lg capitalize font-semibold px-10 w-full sm:w-fit"
+                href="https://jonatas-melo-silva.github.io/jonatas-melo-silva/cv/jonatas_melo_silva.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Baixar CV</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="separator separator--horizontal"></div>
+    </main>
+  </body>
 </html>

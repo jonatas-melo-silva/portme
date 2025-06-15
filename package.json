@@ -1,7 +1,7 @@
 {
   "name": "portme",
   "version": "1.0.0",
-  "description": "A page with my projects, professional experience, summary and social networks.",
+  "description": "A page with my projects, professional experience, about, goals, social networks and CV.",
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watch",
@@ -14,5 +14,8 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.10",
     "tailwindcss": "^4.1.10"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
   }
 }
