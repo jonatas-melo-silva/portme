@@ -3,35 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonatas Melo | Dev & UX/UI</title>
     <meta
       name="description"
-      content="Dev & UX/UI - A page with my projects, professional experience, about, goals, social networks and CV."
-    />
-    <meta
-      name="description"
-      content="Dev & UX/UI -  Uma página com meus projetos, experiência profissional, sobre, objetivos, redes sociais e CV."
+      content="Encontre aqui minha biografia, informações sobre mim, minha experiência profissional, projetos desenvolvidos, links para redes sociais e meu currículo."
     />
     <meta name="author" content="Jonatas Melo" />
-    <meta name="keywords" content="Dev, UX/UI, Front-end, Jonatas Melo" />
-    <meta name="theme-color" content="#A48FFF" />
+    <meta name="copyright" content="© 2025 Jonatas Melo" />
     <meta name="robots" content="index, follow" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta
+      name="keywords"
+      content="Desenvolvedor, UX/UI, Front-end, Jonatas Melo"
+    />
+    <meta name="theme-color" content="#A48FFF" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Jonatas Melo | Dev & UX/UI" />
+    <meta
+      property="og:url"
+      content="https://jonatas-melo-silva.github.io/portme/"
+    />
+    <meta
+      property="og:image"
+      content="https://jonatas-melo-silva.github.io/portme/src/assets/image-avatar.svg"
+    />
+    <meta
+      property="og:description"
+      content="Encontre aqui minha biografia, informações sobre mim, minha experiência profissional, projetos desenvolvidos, links para redes sociais e meu currículo."
+    />
+    <meta property="profile:first_name" content="Jonatas" />
+    <meta property="profile:last_name" content="Melo" />
+    <meta property="profile:username" content="Jonatas Melo" />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Preahvihear&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <link rel="stylesheet" href="./src/styles/output.css" />
-    <title>Dev & UX/UI</title>
   </head>
 
   <body class="min-h-lvh max-w-lvw antialiased bg-background text-foreground">
-    <header class="container mx-auto px-6">
-      <section
+    <header id="header" class="container mx-auto px-6">
+      <div
         class="@container/header w-full h-20 flex items-center justify-between py-6"
       >
-        <div class="w-full flex items-center justify-start">
+        <div aria-label="Logo" class="w-full flex items-center justify-start">
           <a
+            aria-label="Ir para a seção Home"
             class="text-2xl text-primary font-preahvihear btn"
             href="#home"
             >Dev &<strong><em> UX/UI</em></strong></a
@@ -39,6 +59,7 @@
         </div>
 
         <nav
+          id="navigation"
           class="@container/navigation w-full lg:flex items-center justify-end hidden"
         >
           <ul
@@ -46,6 +67,7 @@
           >
             <li>
               <a
+                aria-label="Ir para a seção Home"
                 class="btn btn--link text-foreground hover:text-primary"
                 href="#home"
                 >Home</a
@@ -53,6 +75,7 @@
             </li>
             <li>
               <a
+                aria-label="Ir para a seção Sobre mim"
                 class="btn btn--link text-foreground hover:text-primary"
                 href="#about"
                 >Sobre mim</a
@@ -60,6 +83,7 @@
             </li>
             <li>
               <a
+                aria-label="Ir para a seção Experiência"
                 class="btn btn--link text-foreground hover:text-primary"
                 href="#experience"
                 >Experiência</a
@@ -67,6 +91,7 @@
             </li>
             <li>
               <a
+                aria-label="Ir para a seção Projetos"
                 class="btn btn--link text-foreground hover:text-primary"
                 href="#projects"
                 >Projetos</a
@@ -74,33 +99,34 @@
             </li>
           </ul>
         </nav>
-      </section>
+      </div>
     </header>
 
     <div class="container mx-auto px-6">
-      <div class="separator separator--horizontal"></div>
+      <div aria-hidden="true" class="separator separator--horizontal"></div>
     </div>
 
-    <!-- h-[calc(100vh-5rem)] sm:h-[calc(100vh-12rem)] surface:h-[calc(100vh-6rem)] -->
-
     <main
+      id="main"
       class="container mx-auto h-full flex flex-col items-center justify-center px-6"
     >
       <section
         id="home"
+        area-label="Biografia resumida"
         class="@container/banner w-full flex flex-col-reverse sm:flex-row items-center justify-center py-12 sm:py-24 gap-8"
         data-slot="banner"
       >
         <div
-          class="@container/banner-content w-full lg:w-2/4 flex flex-col items-center sm:items-end gap-12"
+          class="@container/bann=er-content w-full lg:w-2/4 flex flex-col items-center sm:items-end gap-12"
         >
           <div
+            -
             class="@container/banner-text w-full space-y-4 text-center sm:text-end"
           >
             <p class="text-xl sm:text-2xl font-medium">Olá, eu sou</p>
-            <h1 class="text-primary text-4xl sm:text-5xl font-preahvihear">
+            <p class="text-primary text-4xl sm:text-5xl font-preahvihear">
               Jonatas Melo
-            </h1>
+            </p>
             <p class="text-xl sm:text-2xl font-medium">
               Desenvolvedor <strong><em>Front-end</em></strong> &
               <strong><em>UX/UI</em></strong>
@@ -108,6 +134,7 @@
           </div>
 
           <a
+            aria-label="Ir para o LinkedIn (abre em nova janela)"
             class="btn btn--default btn--lg capitalize font-semibold px-10 w-full sm:w-fit"
             href="https://linkedin.com/in/jonatas-melo-silva"
             target="_blank"
@@ -126,14 +153,27 @@
             <img
               data-slot="avatar-image"
               class="avatar--image rounded-4xl border-8 border-border object-cover object-center"
-              src="./src/assets/image-avatar.svg"
+              src="./src/assets/image-avatar-mobile.avif"
               alt="Imagem de Jonatas Melo"
+              srcset="
+                ./src/assets/image-avatar-mobile.avif 200w,
+                ./src/assets/image-avatar-tablet.avif 264w,
+                ./src/assets/image-avatar-laptop.avif 400w
+              "
+              sizes="(max-width: 599px) 200px,
+                (max-width: 1023px) 264px,
+                400px"
+              height="400"
+              width="400"
+              loading="eager"
+              decoding="async"
+              fetchpriority="high"
             />
           </div>
         </div>
       </section>
 
-      <div class="separator separator--horizontal"></div>
+      <div aria-hidden="true" class="separator separator--horizontal"></div>
 
       <section
         id="about"
@@ -152,10 +192,10 @@
               <h2 class="text-primary text-3xl font-normal font-preahvihear">
                 Sobre mim
               </h2>
-              <span class="text-muted-foreground text-xl font-medium font-sans"
-                >Macaíba–RN, Brasil</span
+              <cite class="text-muted-foreground text-xl font-medium font-sans"
+                >Macaíba–RN, Brasil</cite
               >
-              <p
+              <p--
                 class="text-muted-foreground text-xl font-normal font-sans leading-relaxed"
               >
                 <strong>Desenvolvedor <em>Front-end</em></strong> com foco em
@@ -175,13 +215,15 @@
                 próxima com <strong><em>designers</em></strong> e equipes de
                 <strong><em>backend</em></strong> para construir soluções coesas
                 e centradas no usuário.
-              </p>
+              </p-->
             </div>
           </div>
           <div
             class="w-full flex flex-col sm:flex-row items-center justify-center gap-8"
           >
             <div
+              id="social-media"
+              aria-label="Redes sociais"
               class="@container/about-social w-full flex items-center justify-center"
             >
               <ul
@@ -189,6 +231,7 @@
               >
                 <li>
                   <a
+                    aria-label="Ir para o LinkedIn (abre em nova janela)"
                     class="btn btn--icon"
                     href="https://www.linkedin.com/in/jonatas-melo-silva/"
                     target="_blank"
@@ -201,6 +244,7 @@
                 </li>
                 <li>
                   <a
+                    aria-label="Ir para o GitHub (abre em nova janela)"
                     class="btn btn--icon"
                     href="https://github.com/jonatas-melo-silva"
                     target="_blank"
@@ -213,6 +257,7 @@
                 </li>
                 <li>
                   <a
+                    aria-label="Ir para o Instagram (abre em nova janela)"
                     class="btn btn--icon"
                     href="https://www.instagram.com/jonatas_melo_silva/"
                     target="_blank"
@@ -225,6 +270,7 @@
                 </li>
                 <li>
                   <a
+                    aria-label="Ir para o Twitter (abre em nova janela)"
                     class="btn btn--icon"
                     href="https://x.com/JonatasMeloSil3"
                     target="_blank"
@@ -241,10 +287,12 @@
               class="@container/about-download-cv w-full flex items-start justify-start sm:items-center sm:justify-end"
             >
               <a
+                aria-label="Baixar currículo em PDF (abre em nova janela)"
                 class="btn btn--default btn--lg capitalize font-semibold px-10 w-full sm:w-fit"
                 href="https://jonatas-melo-silva.github.io/jonatas-melo-silva/cv/jonatas_melo_silva.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
+                download="jonatas_melo_silva.pdf"
                 >Baixar CV</a
               >
             </div>
@@ -252,7 +300,28 @@
         </div>
       </section>
 
-      <div class="separator separator--horizontal"></div>
+      <div aria-hidden="true" class="separator separator--horizontal"></div>
     </main>
+
+    <script type="application/ld+json">
+      {
+      	"@context": "http://schema.org/",
+      	"@type": "Person",
+      	"name": "Jonatas Melo | Dev & UX/UI",
+      	"image": "https://jonatas-melo-silva.github.io/portme/src/assets/image-avatar.svg",
+      	"url": "https://jonatas-melo-silva.github.io/portme/",
+      	"jobTitle": "Desenvolvedor Front-end & UX/UI",
+      	,
+      	"address": {
+      		"@type": "PostalAddress",
+      		"streetAddress": "Rua Nossa Senhora da Conceição, 17B",
+      		"addressLocality": "Macaíba",
+      		"addressRegion": "Rio Grande do Norte",
+      		"postalCode": "59285177",
+      		"addressCountry": "Brazil"
+      	},
+      	"sameAs": ["https://www.linkedin.com/in/jonatas-melo-silva/", "https://github.com/jonatas-melo-silva", "https://www.instagram.com/jonatas_melo_silva/", "https://x.com/JonatasMeloSil3"]
+      }
+    </script>
   </body>
 </html>

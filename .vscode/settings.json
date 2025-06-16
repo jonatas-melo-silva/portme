@@ -11,7 +11,8 @@
     "portme",
     "Portme",
     "preahvihear",
-    "Preahvihear"
+    "Preahvihear",
+    "wireframes"
   ],
   "[css]": {
     "editor.defaultFormatter": "biomejs.biome"
