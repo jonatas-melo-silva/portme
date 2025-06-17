@@ -45,7 +45,7 @@
   </head>
 
   <body class="min-h-lvh max-w-lvw antialiased bg-background text-foreground">
-    <header id="header" class="container mx-auto px-6">
+    <header id="header" class="container mx-auto px-6 overflow-hidden">
       <div
         class="@container/header w-full h-20 flex items-center justify-between py-6"
       >
@@ -54,7 +54,7 @@
             aria-label="Ir para a seção Home"
             class="text-2xl text-primary font-preahvihear btn"
             href="#home"
-            >Dev &<strong><em> UX/UI</em></strong></a
+            ><strong>Dev</strong> &<strong><em> UX/UI</em></strong></a
           >
         </div>
 
@@ -113,20 +113,22 @@
       <section
         id="home"
         area-label="Biografia resumida"
-        class="@container/banner w-full flex flex-col-reverse sm:flex-row items-center justify-center py-12 sm:py-24 gap-8"
+        class="@container/banner w-full flex flex-col-reverse sm:flex-row items-center justify-center py-12 sm:py-24 gap-8 overflow-hidden"
         data-slot="banner"
       >
         <div
-          class="@container/bann=er-content w-full lg:w-2/4 flex flex-col items-center sm:items-end gap-12"
+          class="@container/banner-content w-full lg:w-2/4 flex flex-col items-center sm:items-end gap-12"
         >
           <div
-            -
             class="@container/banner-text w-full space-y-4 text-center sm:text-end"
           >
             <p class="text-xl sm:text-2xl font-medium">Olá, eu sou</p>
-            <p class="text-primary text-4xl sm:text-5xl font-preahvihear">
-              Jonatas Melo
+
+            <p class="text-primary text-4xl lg:text-5xl font-preahvihear text-nowrap">
+              Jonatas Melo <span class="hidden lg:inline">Silva</span
+              ><span class="lg:hidden">S.</span>
             </p>
+
             <p class="text-xl sm:text-2xl font-medium">
               Desenvolvedor <strong><em>Front-end</em></strong> &
               <strong><em>UX/UI</em></strong>
@@ -134,7 +136,7 @@
           </div>
 
           <a
-            aria-label="Ir para o LinkedIn (abre em nova janela)"
+            aria-label="Ir para o LinkedIn de Jonatas Melo Silva (abre em nova janela)"
             class="btn btn--default btn--lg capitalize font-semibold px-10 w-full sm:w-fit"
             href="https://linkedin.com/in/jonatas-melo-silva"
             target="_blank"
@@ -177,7 +179,7 @@
 
       <section
         id="about"
-        class="@container/about w-full flex items-center justify-center py-12 sm:py-24 gap-8"
+        class="@container/about w-full flex items-center justify-center py-12 sm:py-24 gap-8 overflow-hidden"
         data-slot="about"
       >
         <div
@@ -189,13 +191,15 @@
             <div
               class="@container/about-text w-full flex flex-col items-start justify-start gap-6.5"
             >
-              <h2 class="text-primary text-3xl font-normal font-preahvihear">
+              <h2
+                class="scroll-m-20 text-primary text-3xl font-normal font-preahvihear tracking-tight"
+              >
                 Sobre mim
               </h2>
               <cite class="text-muted-foreground text-xl font-medium font-sans"
                 >Macaíba–RN, Brasil</cite
               >
-              <p--
+              <p
                 class="text-muted-foreground text-xl font-normal font-sans leading-relaxed"
               >
                 <strong>Desenvolvedor <em>Front-end</em></strong> com foco em
@@ -215,7 +219,7 @@
                 próxima com <strong><em>designers</em></strong> e equipes de
                 <strong><em>backend</em></strong> para construir soluções coesas
                 e centradas no usuário.
-              </p-->
+              </p>
             </div>
           </div>
           <div
@@ -231,7 +235,7 @@
               >
                 <li>
                   <a
-                    aria-label="Ir para o LinkedIn (abre em nova janela)"
+                    aria-label="Ir para o LinkedIn de Jonatas Melo Silva (abre em nova janela)"
                     class="btn btn--icon"
                     href="https://www.linkedin.com/in/jonatas-melo-silva/"
                     target="_blank"
@@ -244,7 +248,7 @@
                 </li>
                 <li>
                   <a
-                    aria-label="Ir para o GitHub (abre em nova janela)"
+                    aria-label="Ir para o GitHub de Jonatas Melo Silva (abre em nova janela)"
                     class="btn btn--icon"
                     href="https://github.com/jonatas-melo-silva"
                     target="_blank"
@@ -257,7 +261,7 @@
                 </li>
                 <li>
                   <a
-                    aria-label="Ir para o Instagram (abre em nova janela)"
+                    aria-label="Ir para o Instagram de Jonatas Melo Silva (abre em nova janela)"
                     class="btn btn--icon"
                     href="https://www.instagram.com/jonatas_melo_silva/"
                     target="_blank"
@@ -270,7 +274,7 @@
                 </li>
                 <li>
                   <a
-                    aria-label="Ir para o Twitter (abre em nova janela)"
+                    aria-label="Ir para o Twitter de Jonatas Melo Silva (abre em nova janela)"
                     class="btn btn--icon"
                     href="https://x.com/JonatasMeloSil3"
                     target="_blank"
@@ -296,6 +300,144 @@
                 >Baixar CV</a
               >
             </div>
+          </div>
+        </div>
+      </section>
+
+      <div aria-hidden="true" class="separator separator--horizontal"></div>
+
+      <section
+        id="experience"
+        class="@container/experience w-full flex items-center justify-center py-12 sm:py-24 gap-8 overflow-hidden"
+        data-slot="experience"
+      >
+        <div
+          class="@container/experience-content w-full flex flex-col items-center justify-center gap-12"
+        >
+          <div
+            class="@container/experience-text w-full flex flex-col items-start justify-start gap-6.5"
+          >
+            <h2
+              class="scroll-m-20 text-primary text-3xl font-normal font-preahvihear tracking-tight"
+            >
+              Experiência
+            </h2>
+
+            <details
+              class="w-full flex flex-col items-start justify-start group"
+            >
+              <summary
+                class="w-full flex flex-col items-start justify-start gap-6"
+              >
+                <div
+                  class="min-w-fit flex flex-col sm:flex-row items-start justify-start gap-4"
+                >
+                  <a
+                    aria-label="Ir para o LinkedIn da SETHAS (abre em nova janela)"
+                    href="https://www.linkedin.com/company/sethas-rn/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div
+                      class="avatar rounded-full size-16 sm:size-18 lg:size-20"
+                    >
+                      <img
+                        class="avatar--image rounded-full border-4 border-border object-cover object-center"
+                        src="./src/assets/image-logo-sethas-mobile.avif"
+                        alt="Logo da SETHAS"
+                        srcset="
+                          ./src/assets/image-logo-sethas-mobile.avif 64w,
+                          ./src/assets/image-logo-sethas-tablet.avif 72w,
+                          ./src/assets/image-logo-sethas-laptop.avif 80w
+                        "
+                        sizes="(max-width: 599px) 64px,
+                          (max-width: 1023px) 72px,
+                          80px"
+                        height="80"
+                        width="80"
+                        loading="lazy"
+                        decoding="async"
+                        fetchpriority="low"
+                      />
+                    </div>
+                  </a>
+                  <div
+                    class="w-full flex flex-col items-start justify-start gap-1"
+                  >
+                    <span
+                      class="text-muted-foreground text-xl font-semibold font-sans"
+                      >Front-end Web Developer</span
+                    ><span class="text-muted-foreground font-sans">
+                      Secretaria de Estado da Trabalho, Habitação e Assistência
+                      Social - Estágio </span
+                    ><span
+                      class="text-muted-foreground text-base font-light font-sans"
+                      >Set 2021 - Set 2023</span
+                    >
+                    <span
+                      class="text-muted-foreground text-base font-light font-sans"
+                      ><em>Natal–RN, Brasil</em> - Remota</span
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col items-start justify-end gap-2 sm:ml-22"
+                >
+                  <p
+                    class="text-muted-foreground text-xl font-sans leading-relaxed pr-0.5"
+                  >
+                    Desenvolvimento e manutenção de interfaces para websites e
+                    aplicativos web com foco em responsividade.
+                  </p>
+                  <span class="btn btn--link group-open:hidden">...mais</span>
+                  <span class="btn btn--link hidden group-open:block"
+                    >Ver menos</span
+                  >
+                </div>
+              </summary>
+
+              <ul
+                class="sm:ml-22 p-4 list-disc text-muted-foreground [&>li]:text-lg [&>li]:mt-2"
+              >
+                <li>
+                  Otimização de performance de interfaces web para melhorar a
+                  experiência do usuário e o <strong><em>SEO</em></strong
+                  >.
+                </li>
+                <li>
+                  Colaboração próxima com
+                  <strong><em>designers</em></strong> para traduzir
+                  <strong><em>layouts</em></strong> em código funcional e
+                  garantir a consistência visual e usabilidade em diferentes
+                  dispositivos e navegadores.
+                </li>
+                <li>
+                  Utilização de React, Styled Components e outras tecnologias
+                  modernas.
+                </li>
+                <li>
+                  Implementação de testes de interface e correção de bugs para
+                  garantir a qualidade do código.
+                </li>
+                <li>
+                  Participação em reuniões de planejamento e acompanhamento de
+                  projetos.
+                </li>
+                <li>
+                  Contribuição para a melhoria contínua dos processos de
+                  desenvolvimento.
+                </li>
+                <li>
+                  Mentoria e auxílio a membros menos experientes da equipe.
+                </li>
+              </ul>
+            </details>
+
+            <div
+              aria-hidden="true"
+              class="separator separator--horizontal sm:ml-24"
+            ></div>
           </div>
         </div>
       </section>
