@@ -247,7 +247,7 @@
                     rel="noopener noreferrer"
                     ><img
                       class="w-6 h-6"
-                      src="./src/assets/icone-linkedin.svg"
+                      src="./src/assets/icones/icone-linkedin.svg"
                       alt="Ícone LinkedIn"
                   /></a>
                 </li>
@@ -260,7 +260,7 @@
                     rel="noopener noreferrer"
                     ><img
                       class="w-6 h-6"
-                      src="./src/assets/icone-github.svg"
+                      src="./src/assets/icones/icone-github.svg"
                       alt="Ícone GitHub"
                   /></a>
                 </li>
@@ -273,7 +273,7 @@
                     rel="noopener noreferrer"
                     ><img
                       class="w-6 h-6"
-                      src="./src/assets/icone-instagram.svg"
+                      src="./src/assets/icones/icone-instagram.svg"
                       alt="Ícone Instagram"
                   /></a>
                 </li>
@@ -286,7 +286,7 @@
                     rel="noopener noreferrer"
                     ><img
                       class="w-6 h-6"
-                      src="./src/assets/icone-twitter.svg"
+                      src="./src/assets/icones/icone-x.svg"
                       alt="Ícone Twitter"
                   /></a>
                 </li>
@@ -478,7 +478,7 @@
                 >
                   <img
                     class="avatar--image p-4 rounded-full border-4 border-border object-cover object-center"
-                    src="./src/assets/icone-quebra-cabeca.svg"
+                    src="./src/assets/icones/icone-quebra-cabeca.svg"
                     alt="Ícone de quebra-cabeça"
                   />
                 </div>
@@ -501,12 +501,82 @@
           </div>
         </div>
       </section>
-
-      <div
-        aria-hidden="true"
-        class="separator separator--horizontal mb-20"
-      ></div>
     </main>
+
+    <div class="container mx-auto px-6">
+      <div aria-hidden="true" class="separator separator--horizontal"></div>
+    </div>
+
+    <footer id="footer" class="container mx-auto px-6 overflow-hidden">
+      <div
+        class="@container/footer w-full flex flex-col items-center justify-center gap-4 py-6 sm:flex-row"
+      >
+        <div
+          class="@container/footer-content w-full flex flex-col items-center justify-center gap-4 sm:items-start"
+        >
+          <p class="text-muted-foreground text-lg font-medium">
+            &copy; 2025 Jonatas Melo Silva.
+          </p>
+        </div>
+
+        <nav
+          id="social-media-footer"
+          aria-label="Redes sociais"
+          class="@container/footer-navigation w-full flex items-center justify-center gap-4 sm:justify-end"
+        >
+          <ul
+            class="w-fit h-fit flex items-center justify-center gap-4 sm:items-end"
+          >
+            <li>
+              <a
+                aria-label="Ir para o Telegram de Jonatas Melo Silva (abre em nova janela)"
+                class="btn btn--icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://t.me/JonatasMeloSilva"
+              >
+                <img
+                  class="w-6 h-6"
+                  src="./src/assets/icones/icone-telegram.svg"
+                  alt="Telegram"
+                />
+              </a>
+            </li>
+            <li>
+              <!-- Olá Jonatas Melo Silva, tudo bem? Gostei do seu portfólio e gostaria de entrar em contato com você via WhatsApp. -->
+              <a
+                aria-label="Ir para o WhatsApp de Jonatas Melo Silva (abre em nova janela)"
+                class="btn btn--icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://api.whatsapp.com/send?phone=5584991224132&text=Ol%C3%A1%20Jonatas%20Melo%20Silva%2C%20tudo%20bem%3F%20Gostei%20do%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20entrar%20em%20contato%20com%20voc%C3%AA%20via%20WhatsApp."
+              >
+                <img
+                  class="w-6 h-6"
+                  src="./src/assets/icones/icone-whatsapp.svg"
+                  alt="WhatsApp"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="Ir para o E-mail de Jonatas Melo Silva (abre em nova janela)"
+                class="btn btn--icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="mailto:jonatas.melo.silva@gmail.com"
+              >
+                <img
+                  class="w-6 h-6"
+                  src="./src/assets/icones/icone-envelope.svg"
+                  alt="E-mail"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
 
     <script type="application/ld+json">
       {
