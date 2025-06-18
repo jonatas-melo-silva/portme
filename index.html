@@ -124,13 +124,18 @@
           >
             <p class="text-xl sm:text-2xl font-medium">Olá, eu sou</p>
 
-            <p class="text-primary text-4xl lg:text-5xl font-preahvihear text-nowrap">
+            <p
+              class="text-primary text-3xl lg:text-5xl font-preahvihear text-nowrap"
+            >
               Jonatas Melo <span class="hidden lg:inline">Silva</span
               ><span class="lg:hidden">S.</span>
             </p>
 
             <p class="text-xl sm:text-2xl font-medium">
-              Desenvolvedor <strong><em>Front-end</em></strong> &
+              <span class="hidden xs:inline sm:hidden lg:inline"
+                >Desenvolvedor</span
+              ><span class="xs:hidden sm:inline lg:hidden">Dev</span>
+              <strong><em>Front-end</em></strong> &
               <strong><em>UX/UI</em></strong>
             </p>
           </div>
@@ -150,7 +155,7 @@
         >
           <div
             data-slot="avatar"
-            class="avatar rounded-4xl size-50 sm:size-[264px] lg:size-100"
+            class="avatar rounded-4xl size-50 sm:size-[264px] lg:size-80"
           >
             <img
               data-slot="avatar-image"
@@ -333,6 +338,7 @@
                   class="min-w-fit flex flex-col sm:flex-row items-start justify-start gap-4"
                 >
                   <a
+                    class="hover:brightness-75 transition-all duration-300 ease-in-out"
                     aria-label="Ir para o LinkedIn da SETHAS (abre em nova janela)"
                     href="https://www.linkedin.com/company/sethas-rn/"
                     target="_blank"
@@ -382,7 +388,7 @@
                 </div>
 
                 <div
-                  class="flex flex-col items-start justify-end gap-2 sm:ml-22"
+                  class="flex flex-col items-start justify-end gap-2 sm:ml-22 lg:ml-24"
                 >
                   <p
                     class="text-muted-foreground text-xl font-sans leading-relaxed pr-0.5"
@@ -398,7 +404,7 @@
               </summary>
 
               <ul
-                class="sm:ml-22 p-4 list-disc text-muted-foreground [&>li]:text-lg [&>li]:mt-2"
+                class="sm:ml-22 lg:ml-24 p-4 list-disc text-muted-foreground [&>li]:text-lg [&>li]:mt-2"
               >
                 <li>
                   Otimização de performance de interfaces web para melhorar a
@@ -434,15 +440,72 @@
               </ul>
             </details>
 
-            <div
+            <!-- Adicionar separador quando tiver mais de um item -->
+            <!-- <div
               aria-hidden="true"
               class="separator separator--horizontal sm:ml-24"
-            ></div>
+            ></div> -->
           </div>
         </div>
       </section>
 
       <div aria-hidden="true" class="separator separator--horizontal"></div>
+
+      <section
+        id="projects"
+        class="@container/projects w-full flex items-center justify-center py-12 sm:py-24 gap-8 overflow-hidden"
+        data-slot="about"
+      >
+        <div
+          class="@container/projects w-full flex flex-col items-center justify-center gap-12"
+        >
+          <div
+            class="@container/projects-content w-full flex flex-col items-center justify-center gap-12"
+          >
+            <div
+              class="@container/projects-text w-full flex flex-col items-start justify-start gap-6.5"
+            >
+              <h2
+                class="scroll-m-20 text-primary text-3xl font-normal font-preahvihear tracking-tight"
+              >
+                Projetos
+              </h2>
+              <div
+                class="w-full flex flex-col sm:flex-row items-start justify-center gap-4"
+              >
+                <div
+                  class="avatar rounded-full size-16 sm:size-18 lg:size-20 flex items-center justify-center"
+                >
+                  <img
+                    class="avatar--image p-4 rounded-full border-4 border-border object-cover object-center"
+                    src="./src/assets/icone-quebra-cabeca.svg"
+                    alt="Ícone de quebra-cabeça"
+                  />
+                </div>
+
+                <p
+                  class="text-muted-foreground text-lg font-sans leading-relaxed"
+                >
+                  Em breve, estarei adicionando uma seção dedicada aos meus
+                  projetos desenvolvidos. Nela, você encontrará uma seleção de
+                  trabalhos que refletem minha experiência e habilidades como
+                  desenvolvedor. Cada projeto será acompanhado de uma breve
+                  descrição, destacando as tecnologias utilizadas e os desafios
+                  enfrentados durante o desenvolvimento, acesso ao código-fonte
+                  e demonstrações ao vivo. Fique atento para conferir as
+                  novidades e explorar os projetos que tenho realizado. Estou
+                  animado para compartilhar essas experiências com você!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div
+        aria-hidden="true"
+        class="separator separator--horizontal mb-20"
+      ></div>
     </main>
 
     <script type="application/ld+json">
