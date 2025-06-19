@@ -229,7 +229,7 @@
 /* Bloco - Estilos do corpo */
 @layer components {
   .ui-body {
-    @apply min-h-lvh max-w-lvw antialiased bg-background text-foreground;
+    @apply min-h-dvh overflow-x-hidden antialiased bg-background text-foreground;
   }
 
   /* Bloco - Estilos de botão */
