@@ -2,9 +2,14 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "biomejs.biome",
   "cSpell.words": [
+    "cabeca",
+    "changefreq",
     "Curriculo",
+    "icone",
+    "icones",
     "jonatas",
     "Jonatas",
+    "lastmod",
     "linkedin",
     "Mentoria",
     "nowrap",
@@ -15,11 +20,10 @@
     "Preahvihear",
     "sethas",
     "SETHAS",
+    "urlset",
+    "whatsapp",
     "wireframes"
   ],
-  "[css]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -27,6 +31,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
 }

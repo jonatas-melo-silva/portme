@@ -44,15 +44,15 @@
     <link rel="stylesheet" href="./src/styles/output.css" />
   </head>
 
-  <body class="min-h-lvh max-w-lvw antialiased bg-background text-foreground">
-    <header id="header" class="container mx-auto px-6 overflow-hidden">
+  <body class="ui-body">
+    <header id="header" class="container mx-auto">
       <div
-        class="@container/header w-full h-20 flex items-center justify-between py-6"
+        class="@container/header w-full h-20 flex items-center justify-between py-6 px-6 overflow-hidden"
       >
         <div aria-label="Logo" class="w-full flex items-center justify-start">
           <a
             aria-label="Ir para a seção Home"
-            class="text-2xl text-primary font-preahvihear btn"
+            class="text-2xl text-primary font-preahvihear ui-btn"
             href="#home"
             ><strong>Dev</strong> &<strong><em> UX/UI</em></strong></a
           >
@@ -68,7 +68,7 @@
             <li>
               <a
                 aria-label="Ir para a seção Home"
-                class="btn btn--link text-foreground hover:text-primary"
+                class="ui-btn ui-btn--link text-foreground hover:text-primary"
                 href="#home"
                 >Home</a
               >
@@ -76,7 +76,7 @@
             <li>
               <a
                 aria-label="Ir para a seção Sobre mim"
-                class="btn btn--link text-foreground hover:text-primary"
+                class="ui-btn ui-btn--link text-foreground hover:text-primary"
                 href="#about"
                 >Sobre mim</a
               >
@@ -84,7 +84,7 @@
             <li>
               <a
                 aria-label="Ir para a seção Experiência"
-                class="btn btn--link text-foreground hover:text-primary"
+                class="ui-btn ui-btn--link text-foreground hover:text-primary"
                 href="#experience"
                 >Experiência</a
               >
@@ -92,7 +92,7 @@
             <li>
               <a
                 aria-label="Ir para a seção Projetos"
-                class="btn btn--link text-foreground hover:text-primary"
+                class="ui-btn ui-btn--link text-foreground hover:text-primary"
                 href="#projects"
                 >Projetos</a
               >
@@ -102,18 +102,21 @@
       </div>
     </header>
 
-    <div class="container mx-auto px-6">
-      <div aria-hidden="true" class="separator separator--horizontal"></div>
+    <div class="container mx-auto px-6 overflow-hidden">
+      <div
+        aria-hidden="true"
+        class="ui-separator ui-separator--horizontal"
+      ></div>
     </div>
 
     <main
       id="main"
-      class="container mx-auto h-full flex flex-col items-center justify-center px-6"
+      class="container mx-auto h-full flex flex-col items-center justify-center"
     >
       <section
         id="home"
         area-label="Biografia resumida"
-        class="@container/banner w-full flex flex-col-reverse sm:flex-row items-center justify-center py-12 sm:py-24 gap-8 overflow-hidden"
+        class="@container/banner w-full flex flex-col-reverse sm:flex-row items-center justify-center py-12 sm:py-24 gap-8 overflow-hidden px-6"
         data-slot="banner"
       >
         <div
@@ -142,7 +145,7 @@
 
           <a
             aria-label="Ir para o LinkedIn de Jonatas Melo Silva (abre em nova janela)"
-            class="btn btn--default btn--lg capitalize font-semibold px-10 w-full sm:w-fit"
+            class="ui-btn ui-btn--default ui-btn--lg capitalize font-semibold px-10 w-full sm:w-fit"
             href="https://linkedin.com/in/jonatas-melo-silva"
             target="_blank"
             rel="noopener noreferrer"
@@ -155,11 +158,11 @@
         >
           <div
             data-slot="avatar"
-            class="avatar rounded-4xl size-50 sm:size-[264px] lg:size-80"
+            class="ui-avatar rounded-4xl size-50 sm:size-[264px] lg:size-80"
           >
             <img
               data-slot="avatar-image"
-              class="avatar--image rounded-4xl border-8 border-border object-cover object-center"
+              class="ui-avatar__image rounded-4xl border-8 border-border object-cover object-center"
               src="./src/assets/image-avatar-mobile.avif"
               alt="Imagem de Jonatas Melo"
               srcset="
@@ -180,11 +183,16 @@
         </div>
       </section>
 
-      <div aria-hidden="true" class="separator separator--horizontal"></div>
+      <div class="container mx-auto px-6 overflow-hidden">
+        <div
+          aria-hidden="true"
+          class="ui-separator ui-separator--horizontal"
+        ></div>
+      </div>
 
       <section
         id="about"
-        class="@container/about w-full flex items-center justify-center py-12 sm:py-24 gap-8 overflow-hidden"
+        class="@container/about w-full flex items-center justify-center py-12 sm:py-24 gap-8 overflow-hidden px-6"
         data-slot="about"
       >
         <div
@@ -241,7 +249,7 @@
                 <li>
                   <a
                     aria-label="Ir para o LinkedIn de Jonatas Melo Silva (abre em nova janela)"
-                    class="btn btn--icon"
+                    class="ui-btn ui-btn--icon"
                     href="https://www.linkedin.com/in/jonatas-melo-silva/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -254,7 +262,7 @@
                 <li>
                   <a
                     aria-label="Ir para o GitHub de Jonatas Melo Silva (abre em nova janela)"
-                    class="btn btn--icon"
+                    class="ui-btn ui-btn--icon"
                     href="https://github.com/jonatas-melo-silva"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -267,7 +275,7 @@
                 <li>
                   <a
                     aria-label="Ir para o Instagram de Jonatas Melo Silva (abre em nova janela)"
-                    class="btn btn--icon"
+                    class="ui-btn ui-btn--icon"
                     href="https://www.instagram.com/jonatas_melo_silva/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -280,7 +288,7 @@
                 <li>
                   <a
                     aria-label="Ir para o Twitter de Jonatas Melo Silva (abre em nova janela)"
-                    class="btn btn--icon"
+                    class="ui-btn ui-btn--icon"
                     href="https://x.com/JonatasMeloSil3"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -297,7 +305,7 @@
             >
               <a
                 aria-label="Baixar currículo em PDF (abre em nova janela)"
-                class="btn btn--default btn--lg capitalize font-semibold px-10 w-full sm:w-fit"
+                class="ui-btn ui-btn--default ui-btn--lg capitalize font-semibold px-10 w-full sm:w-fit"
                 href="https://jonatas-melo-silva.github.io/jonatas-melo-silva/cv/jonatas_melo_silva.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -309,11 +317,16 @@
         </div>
       </section>
 
-      <div aria-hidden="true" class="separator separator--horizontal"></div>
+      <div class="container mx-auto px-6 overflow-hidden">
+        <div
+          aria-hidden="true"
+          class="ui-separator ui-separator--horizontal"
+        ></div>
+      </div>
 
       <section
         id="experience"
-        class="@container/experience w-full flex items-center justify-center py-12 sm:py-24 gap-8 overflow-hidden"
+        class="@container/experience w-full flex items-center justify-center py-12 sm:py-24 gap-8 overflow-hidden px-6"
         data-slot="experience"
       >
         <div
@@ -338,17 +351,17 @@
                   class="min-w-fit flex flex-col sm:flex-row items-start justify-start gap-4"
                 >
                   <a
-                    class="hover:brightness-75 transition-all duration-300 ease-in-out"
+                    class="hover:brightness-75 transition-all duration-300 ease-in-out outline-none focus-visible:rounded-full focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]"
                     aria-label="Ir para o LinkedIn da SETHAS (abre em nova janela)"
                     href="https://www.linkedin.com/company/sethas-rn/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <div
-                      class="avatar rounded-full size-16 sm:size-18 lg:size-20"
+                      class="ui-avatar rounded-full size-16 sm:size-18 lg:size-20"
                     >
                       <img
-                        class="avatar--image rounded-full border-4 border-border object-cover object-center"
+                        class="ui-avatar__image rounded-full border-4 border-border object-cover object-center"
                         src="./src/assets/image-logo-sethas-mobile.avif"
                         alt="Logo da SETHAS"
                         srcset="
@@ -396,8 +409,10 @@
                     Desenvolvimento e manutenção de interfaces para websites e
                     aplicativos web com foco em responsividade.
                   </p>
-                  <span class="btn btn--link group-open:hidden">...mais</span>
-                  <span class="btn btn--link hidden group-open:block"
+                  <span class="ui-btn ui-btn--link group-open:hidden"
+                    >...mais</span
+                  >
+                  <span class="ui-btn ui-btn--link hidden group-open:block"
                     >Ver menos</span
                   >
                 </div>
@@ -443,17 +458,22 @@
             <!-- Adicionar separador quando tiver mais de um item -->
             <!-- <div
               aria-hidden="true"
-              class="separator separator--horizontal sm:ml-24"
+              class="ui-separator ui-separator--horizontal"
             ></div> -->
           </div>
         </div>
       </section>
 
-      <div aria-hidden="true" class="separator separator--horizontal"></div>
+      <div class="container mx-auto px-6 overflow-hidden">
+        <div
+          aria-hidden="true"
+          class="ui-separator ui-separator--horizontal"
+        ></div>
+      </div>
 
       <section
         id="projects"
-        class="@container/projects w-full flex items-center justify-center py-12 sm:py-24 gap-8 overflow-hidden"
+        class="@container/projects w-full flex items-center justify-center py-12 sm:py-24 gap-8 overflow-hidden px-6"
         data-slot="about"
       >
         <div
@@ -474,10 +494,10 @@
                 class="w-full flex flex-col sm:flex-row items-start justify-center gap-4"
               >
                 <div
-                  class="avatar rounded-full size-16 sm:size-18 lg:size-20 flex items-center justify-center"
+                  class="ui-avatar rounded-full size-16 sm:size-18 lg:size-20 flex items-center justify-center"
                 >
                   <img
-                    class="avatar--image p-4 rounded-full border-4 border-border object-cover object-center"
+                    class="ui-avatar__image p-4 rounded-full border-4 border-border object-cover object-center"
                     src="./src/assets/icones/icone-quebra-cabeca.svg"
                     alt="Ícone de quebra-cabeça"
                   />
@@ -503,19 +523,23 @@
       </section>
     </main>
 
-    <div class="container mx-auto px-6">
-      <div aria-hidden="true" class="separator separator--horizontal"></div>
+    <div class="container mx-auto px-6 overflow-hidden">
+      <div
+        aria-hidden="true"
+        class="ui-separator ui-separator--horizontal"
+      ></div>
     </div>
 
-    <footer id="footer" class="container mx-auto px-6 overflow-hidden">
+    <footer id="footer" class="container mx-auto">
       <div
-        class="@container/footer w-full flex flex-col items-center justify-center gap-4 py-6 sm:flex-row"
+        class="@container/footer w-full flex flex-col items-center justify-center gap-4 py-6 sm:flex-row overflow-auto px-6"
       >
         <div
           class="@container/footer-content w-full flex flex-col items-center justify-center gap-4 sm:items-start"
         >
           <p class="text-muted-foreground text-lg font-medium">
-            &copy; 2025 Jonatas Melo Silva.
+            &copy; <span id="current-year-at-footer">2025</span> Jonatas Melo
+            Silva.
           </p>
         </div>
 
@@ -530,7 +554,7 @@
             <li>
               <a
                 aria-label="Ir para o Telegram de Jonatas Melo Silva (abre em nova janela)"
-                class="btn btn--icon"
+                class="ui-btn ui-btn--icon"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://t.me/JonatasMeloSilva"
@@ -546,7 +570,7 @@
               <!-- Olá Jonatas Melo Silva, tudo bem? Gostei do seu portfólio e gostaria de entrar em contato com você via WhatsApp. -->
               <a
                 aria-label="Ir para o WhatsApp de Jonatas Melo Silva (abre em nova janela)"
-                class="btn btn--icon"
+                class="ui-btn ui-btn--icon"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://api.whatsapp.com/send?phone=5584991224132&text=Ol%C3%A1%20Jonatas%20Melo%20Silva%2C%20tudo%20bem%3F%20Gostei%20do%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20entrar%20em%20contato%20com%20voc%C3%AA%20via%20WhatsApp."
@@ -561,10 +585,10 @@
             <li>
               <a
                 aria-label="Ir para o E-mail de Jonatas Melo Silva (abre em nova janela)"
-                class="btn btn--icon"
+                class="ui-btn ui-btn--icon"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="mailto:jonatas.melo.silva@gmail.com"
+                href="mailto:jonatas891024@gmail.com"
               >
                 <img
                   class="w-6 h-6"
@@ -577,6 +601,24 @@
         </nav>
       </div>
     </footer>
+
+    <script src="./src/scripts/main.js" type="module"></script>
+
+    <script type="module">
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/sw.js")
+          .then((registration) => {
+            console.log(
+              "Service Worker registrado com sucesso:",
+              registration.scope
+            );
+          })
+          .catch((error) => {
+            console.log("Falha ao registrar Service Worker:", error);
+          });
+      }
+    </script>
 
     <script type="application/ld+json">
       {

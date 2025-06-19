@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jonatas-melo-silva.github.io/portme/sitemap.xml
