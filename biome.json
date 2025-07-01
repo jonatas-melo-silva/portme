@@ -1,32 +1,60 @@
 {
-  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "organizeImports": {
-    "enabled": true
+  "$schema": "https://biomejs.dev/schemas/2.0.5/schema.json",
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "experimentalScannerIgnores": ["node_modules", "dist", "build", "coverage"],
+    "ignoreUnknown": false
   },
   "formatter": {
+    "enabled": true,
     "indentStyle": "space",
     "indentWidth": 2,
     "lineWidth": 80
   },
-  "javascript": {
-    "formatter": {
-      "arrowParentheses": "asNeeded",
-      "jsxQuoteStyle": "double",
-      "quoteStyle": "single",
-      "semicolons": "asNeeded",
-      "trailingCommas": "es5"
-    }
-  },
   "linter": {
     "enabled": true,
     "rules": {
+      "nursery": {
+        "useSortedClasses": {
+          "level": "error",
+          "fix": "safe",
+          "options": {
+            "attributes": ["class", "className"],
+            "functions": ["cn", "clsx", "classnames", "twMerge"]
+          }
+        }
+      },
       "recommended": true
     }
   },
-  "files": {
-    "ignore": [
-      "node_modules",
-      "dist"
-    ]
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double",
+      "arrowParentheses": "asNeeded",
+      "trailingCommas": "es5",
+      "semicolons": "asNeeded",
+      "lineEnding": "lf"
+    }
+  },
+  "html": {
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "lineEnding": "lf"
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
   }
 }
