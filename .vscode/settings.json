@@ -12,6 +12,8 @@
     "lastmod",
     "linkedin",
     "Mentoria",
+    "noopener",
+    "noreferrer",
     "nowrap",
     "oklch",
     "portme",
@@ -25,7 +27,7 @@
     "wireframes"
   ],
   "[html]": {
-    "editor.defaultFormatter": "biomejs.biome"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "biomejs.biome"
