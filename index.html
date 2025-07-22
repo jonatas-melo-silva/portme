@@ -54,7 +54,7 @@
             aria-label="Ir para a seção Home"
             class="text-2xl text-primary font-preahvihear ui-btn"
             href="#home"
-            ><strong>Dev</strong> &<strong><em> UX/UI</em></strong></a
+            ><strong>Dev</strong>&<strong><em>UX/UI</em></strong></a
           >
         </div>
 
@@ -130,15 +130,16 @@
             <p
               class="text-primary text-3xl lg:text-5xl font-preahvihear text-nowrap"
             >
-              Jonatas Melo <span class="hidden lg:inline">Silva</span
-              ><span class="lg:hidden">S.</span>
+              Jonatas Melo <span class="hidden lg:inline">Silva</span>
+              <span class="lg:hidden">S.</span>
             </p>
 
             <p class="text-xl sm:text-2xl font-medium">
               <span class="hidden xs:inline sm:hidden lg:inline"
                 >Desenvolvedor</span
-              ><span class="xs:hidden sm:inline lg:hidden">Dev</span>
-              <strong><em>Front-end</em></strong> &
+              >
+              <span class="xs:hidden sm:inline lg:hidden">Dev</span>
+              <strong><em>Front-end </em></strong>&
               <strong><em>UX/UI</em></strong>
             </p>
           </div>
@@ -163,12 +164,12 @@
             <img
               data-slot="avatar-image"
               class="ui-avatar__image rounded-4xl border-8 border-border object-cover object-center"
-              src="./src/assets/image-avatar-mobile.avif"
+              src="./src/assets/images/avatar-mobile.avif"
               alt="Imagem de Jonatas Melo"
               srcset="
-                ./src/assets/image-avatar-mobile.avif 200w,
-                ./src/assets/image-avatar-tablet.avif 264w,
-                ./src/assets/image-avatar-laptop.avif 400w
+                ./src/assets/images/avatar-mobile.avif 200w,
+                ./src/assets/images/avatar-tablet.avif 264w,
+                ./src/assets/images/avatar-laptop.avif 400w
               "
               sizes="(max-width: 599px) 200px,
                 (max-width: 1023px) 264px,
@@ -209,40 +210,45 @@
               >
                 Sobre mim
               </h2>
-              <cite class="text-muted-foreground text-xl font-medium font-sans"
-                >Macaíba–RN, Brasil</cite
-              >
+              <cite class="text-muted-foreground text-xl font-medium font-sans">
+                Macaíba–RN, Brasil
+              </cite>
               <div class="w-full flex flex-col items-start justify-start gap-2">
                 <p
                   class="text-muted-foreground text-xl font-normal font-sans leading-relaxed"
                 >
-                  <strong>Desenvolvedor <em>Front-end</em></strong> com foco em
-                  <strong><em>UX/UI</em></strong
-                  >. Busco atuar no desenvolvimento de interfaces modernas,
-                  responsivas e acessíveis, aplicando, princípios de experiência
-                  do usuário e consistência visual.
+                  Desenvolvedor
+                  <strong><em>Front-End</em> </strong>altamente qualificado e
+                  com orientação a resultados, focado em construir soluções web
+                  inovadoras e de alto valor. Minha atuação é marcada pela
+                  aplicação de um sólido domínio em
+                  <strong><em>ReactJS</em> </strong>e
+                  <strong><em>Next.js</em> </strong>(incluindo
+                  <strong><em>App Router</em> </strong>e
+                  <strong><em>Server Components</em> </strong>), princípios de
+                  Código Limpo, e diretrizes de acessibilidade
+                  (<strong>WCAG</strong>), garantindo a entrega de interfaces de
+                  usuário performáticas, manuteníveis e inclusivas.
                 </p>
                 <p
                   class="text-muted-foreground text-xl font-normal font-sans leading-relaxed"
                 >
-                  Possuo experiência na tradução de
-                  <strong><em>layouts</em></strong
-                  >, <strong><em>wireframes</em></strong> e
-                  <strong><em>protótipos</em></strong> em código funcional
-                  utilizando <strong><em>HTML</em></strong
-                  >, <strong><em>CSS</em></strong
-                  >, <strong><em>JavaScript</em></strong> e frameworks como
-                  <strong><em>React</em></strong> e
-                  <strong><em>Next.js</em></strong
-                  >.
+                  Especializado em gerenciamento de estados (<strong
+                    >Redux, Zustand, Context API</strong
+                  >), integração eficiente com <strong>APIs</strong>, e
+                  otimizações de performance (<strong>HTTP, SEO</strong>), que
+                  visam melhorar a experiência do usuário, aumentar a
+                  visibilidade e o engajamento dos produtos digitais.
                 </p>
                 <p
                   class="text-muted-foreground text-xl font-normal font-sans leading-relaxed"
                 >
-                  Experiência na otimização de performance e colaboração próxima
-                  com <strong><em>designers</em></strong> e equipes de
-                  <strong><em>backend</em></strong> para construir soluções
-                  coesas e centradas no usuário.
+                  Colaboro efetivamente em equipes ágeis
+                  (<strong>Scrum/Kanban</strong>) e utilizo
+                  <strong><em>Design Systems</em> </strong>e
+                  <strong><em>Docker</em> </strong>para desenvolver aplicações
+                  escaláveis e robustas, impulsionando o valor do negócio
+                  através da proatividade e aprendizado contínuo.
                 </p>
               </div>
             </div>
@@ -251,7 +257,7 @@
             class="w-full flex flex-col sm:flex-row items-center justify-center gap-8"
           >
             <div
-              id="social-media"
+              id="social-media-about"
               aria-label="Redes sociais"
               class="@container/about-social w-full flex items-center justify-center"
             >
@@ -262,12 +268,13 @@
                   <a
                     aria-label="Ir para o LinkedIn de Jonatas Melo Silva (abre em nova janela)"
                     class="ui-btn ui-btn--icon"
+                    data-social-media="linkedin"
                     href="https://www.linkedin.com/in/jonatas-melo-silva/"
                     target="_blank"
                     rel="noopener noreferrer"
                     ><img
-                      class="w-6 h-6"
-                      src="./src/assets/icones/icone-linkedin.svg"
+                      class="w-6 h-6 hover:animate-bounce"
+                      src="./src/assets/icons/linkedin.svg"
                       alt="Ícone LinkedIn"
                   /></a>
                 </li>
@@ -275,25 +282,29 @@
                   <a
                     aria-label="Ir para o GitHub de Jonatas Melo Silva (abre em nova janela)"
                     class="ui-btn ui-btn--icon"
+                    data-social-media="github"
                     href="https://github.com/jonatas-melo-silva"
                     target="_blank"
                     rel="noopener noreferrer"
-                    ><img
+                  >
+                    <img
                       class="w-6 h-6"
-                      src="./src/assets/icones/icone-github.svg"
+                      src="./src/assets/icons/github.svg"
                       alt="Ícone GitHub"
-                  /></a>
+                    />
+                  </a>
                 </li>
                 <li>
                   <a
                     aria-label="Ir para o Instagram de Jonatas Melo Silva (abre em nova janela)"
                     class="ui-btn ui-btn--icon"
+                    data-social-media="instagram"
                     href="https://www.instagram.com/jonatas_melo_silva/"
                     target="_blank"
                     rel="noopener noreferrer"
                     ><img
                       class="w-6 h-6"
-                      src="./src/assets/icones/icone-instagram.svg"
+                      src="./src/assets/icons/instagram.svg"
                       alt="Ícone Instagram"
                   /></a>
                 </li>
@@ -301,12 +312,13 @@
                   <a
                     aria-label="Ir para o Twitter de Jonatas Melo Silva (abre em nova janela)"
                     class="ui-btn ui-btn--icon"
+                    data-social-media="x"
                     href="https://x.com/JonatasMeloSil3"
                     target="_blank"
                     rel="noopener noreferrer"
                     ><img
                       class="w-6 h-6"
-                      src="./src/assets/icones/icone-x.svg"
+                      src="./src/assets/icons/x.svg"
                       alt="Ícone Twitter"
                   /></a>
                 </li>
@@ -374,12 +386,12 @@
                     >
                       <img
                         class="ui-avatar__image rounded-full border-4 border-border object-cover object-center"
-                        src="./src/assets/image-logo-sethas-mobile.avif"
+                        src="./src/assets/images/logo-sethas-mobile.avif"
                         alt="Logo da SETHAS"
                         srcset="
-                          ./src/assets/image-logo-sethas-mobile.avif 64w,
-                          ./src/assets/image-logo-sethas-tablet.avif 72w,
-                          ./src/assets/image-logo-sethas-laptop.avif 80w
+                          ./src/assets/images/logo-sethas-mobile.avif 64w,
+                          ./src/assets/images/logo-sethas-tablet.avif 72w,
+                          ./src/assets/images/logo-sethas-laptop.avif 80w
                         "
                         sizes="(max-width: 599px) 64px,
                           (max-width: 1023px) 72px,
@@ -398,16 +410,18 @@
                     <span
                       class="text-muted-foreground text-xl font-semibold font-sans"
                       >Front-end Web Developer</span
-                    ><span class="text-muted-foreground font-sans">
+                    >
+                    <span class="text-muted-foreground font-sans">
                       Secretaria de Estado da Trabalho, Habitação e Assistência
-                      Social - Estágio </span
-                    ><span
+                      Social - Estágio
+                    </span>
+                    <span
                       class="text-muted-foreground text-base font-light font-sans"
                       >Set 2021 - Set 2023</span
                     >
                     <span
                       class="text-muted-foreground text-base font-light font-sans"
-                      ><em>Natal–RN, Brasil</em> - Remota</span
+                      ><em>Natal–RN, Brasil</em>- Remota</span
                     >
                   </div>
                 </div>
@@ -418,13 +432,22 @@
                   <p
                     class="text-muted-foreground text-xl font-sans leading-relaxed pr-0.5"
                   >
-                    Desenvolvimento e manutenção de interfaces para websites e
-                    aplicativos web com foco em responsividade.
+                    <strong
+                      >Desenvolvi e otimizei interfaces de usuário responsivas </strong
+                    >para aplicações web de grande escala,
+                    <strong
+                      >melhorando a usabilidade e a velocidade de
+                      carregamento</strong
+                    >, utilizando <strong>ReactJS </strong>para criação de SPAs,
+                    com foco em <strong>performance HTTP </strong>e
+                    <strong>Core Web Vitals</strong>.
                   </p>
-                  <span class="ui-btn ui-btn--link group-open:hidden"
+                  <span
+                    class="ui-btn ui-btn--link group-open:hidden cursor-pointer"
                     >...mais</span
                   >
-                  <span class="ui-btn ui-btn--link hidden group-open:block"
+                  <span
+                    class="ui-btn ui-btn--link hidden group-open:block cursor-pointer"
                     >Ver menos</span
                   >
                 </div>
@@ -434,35 +457,71 @@
                 class="sm:ml-22 lg:ml-24 p-4 list-disc text-muted-foreground [&>li]:text-lg [&>li]:mt-2"
               >
                 <li>
-                  Otimização de performance de interfaces web para melhorar a
-                  experiência do usuário e o <strong><em>SEO</em></strong
+                  <strong
+                    >Implementei soluções avançadas de gerenciamento de estado,
+                    aumentando a eficiência e a manutenibilidade do código </strong
+                  >em módulos críticos, através da aplicação de
+                  <strong>Redux </strong>e <strong>Zustand </strong>, explorando
+                  <strong>Contextos do React e Reducers</strong>, para
+                  otimização.
+                </li>
+                <li>
+                  <strong
+                    >Colaborei ativamente na concepção e implementação de Design
+                    Systems escaláveis, padronizando componentes e acelerando o
+                    desenvolvimento de novas features</strong
+                  >, utilizando <strong>Figma</strong>. Esta ação reflete a
+                  Colaboração Efetiva e o Pensamento Estruturado e Sistêmico.
+                </li>
+                <li>
+                  <strong
+                    >Contribuí para a melhoria da qualidade e robustez do
+                    código, reduzindo a ocorrência de bugs e aprimorando a
+                    manutenibilidade</strong
+                  >, aplicando
+                  <strong>princípios de Código Limpo (Clean Code) </strong>com
+                  JavaScript e ReactJS, e desenvolvendo com foco em
+                  <strong>acessibilidade (guidelines WCAG)</strong>,
+                  demonstrando
+                  <strong>Foco em Qualidade e Atenção aos Detalhes</strong>.
+                </li>
+                <li>
+                  <strong
+                    >Participei da integração de novas funcionalidades com APIs
+                    de backend, garantindo a consistência e a segurança dos
+                    dados</strong
+                  >, por meio de
+                  <strong
+                    >consumo de API, requisições HTTP, estratégias de cache e
+                    implementação de testes (unitários)</strong
                   >.
                 </li>
                 <li>
-                  Colaboração próxima com
-                  <strong><em>designers</em></strong> para traduzir
-                  <strong><em>layouts</em></strong> em código funcional e
-                  garantir a consistência visual e usabilidade em diferentes
-                  dispositivos e navegadores.
+                  <strong>Atuei em equipes ágeis</strong>, utilizando
+                  metodologias <strong>Scrum e Kanban </strong>no ciclo de vida
+                  do produto, gerindo demandas, o que resultou em
+                  <strong
+                    >entregas mais coesas e alinhadas aos objetivos
+                    estratégicos</strong
+                  >. Esta experiência demonstra
+                  <strong>Colaboração Efetiva </strong>e
+                  <strong>Orientação a Resultados</strong>.
                 </li>
                 <li>
-                  Utilização de React, Styled Components e outras tecnologias
-                  modernas.
+                  <strong
+                    >Desenvolvi e conteinerizei ambientes de desenvolvimento e
+                    produção, simplificando o deploy e a escalabilidade </strong
+                  >,utilizando <strong>Docker e Docker Compose </strong>para
+                  gerenciamento de containers e aplicando fundamentos da
+                  <strong>Cultura DevOps</strong>. Esta iniciativa demonstra
+                  <strong>Pensamento Estruturado e Sistêmico</strong>.
                 </li>
                 <li>
-                  Implementação de testes de interface e correção de bugs para
-                  garantir a qualidade do código.
-                </li>
-                <li>
-                  Participação em reuniões de planejamento e acompanhamento de
-                  projetos.
-                </li>
-                <li>
-                  Contribuição para a melhoria contínua dos processos de
-                  desenvolvimento.
-                </li>
-                <li>
-                  Mentoria e auxílio a membros menos experientes da equipe.
+                  <strong
+                    >Aprimorei a experiência do usuário com estilizações
+                    avançadas, implementando responsividade</strong
+                  >, utilizando <strong>Chakra UI </strong> e explorando
+                  <strong>CSS-in-JS</strong> para componentes estilizados.
                 </li>
               </ul>
             </details>
@@ -510,7 +569,7 @@
                 >
                   <img
                     class="ui-avatar__image p-4 rounded-full border-4 border-border object-cover object-center"
-                    src="./src/assets/icones/icone-quebra-cabeca.svg"
+                    src="./src/assets/icons/quebra-cabeca.svg"
                     alt="Ícone de quebra-cabeça"
                   />
                 </div>
@@ -524,17 +583,17 @@
                     Em breve, estarei adicionando uma seção dedicada aos meus
                     <strong>projetos desenvolvidos</strong>. Nela, você
                     encontrará uma seleção de trabalhos que refletem minha
-                    <strong>experiência</strong> e
-                    <strong>habilidades</strong> como desenvolvedor.
+                    <strong>experiência </strong>e
+                    <strong>habilidades </strong>como desenvolvedor.
                   </p>
                   <p
                     class="text-muted-foreground text-xl font-sans leading-relaxed"
                   >
                     Cada projeto será acompanhado de uma breve descrição,
-                    destacando as <strong>tecnologias</strong> utilizadas e os
-                    <strong>desafios</strong> enfrentados durante o
-                    desenvolvimento, acesso ao <strong>código-fonte</strong> e
-                    <strong>demonstrações</strong> ao vivo.
+                    destacando as <strong>tecnologias </strong>utilizadas e os
+                    <strong>desafios </strong>enfrentados durante o
+                    desenvolvimento, acesso ao <strong>código-fonte </strong>e
+                    <strong>demonstrações </strong>ao vivo.
                   </p>
                   <p
                     class="text-muted-foreground text-xl font-sans leading-relaxed"
@@ -589,7 +648,7 @@
               >
                 <img
                   class="w-6 h-6"
-                  src="./src/assets/icones/icone-telegram.svg"
+                  src="./src/assets/icons/telegram.svg"
                   alt="Telegram"
                 />
               </a>
@@ -605,7 +664,7 @@
               >
                 <img
                   class="w-6 h-6"
-                  src="./src/assets/icones/icone-whatsapp.svg"
+                  src="./src/assets/icons/whatsapp.svg"
                   alt="WhatsApp"
                 />
               </a>
@@ -620,7 +679,7 @@
               >
                 <img
                   class="w-6 h-6"
-                  src="./src/assets/icones/icone-envelope.svg"
+                  src="./src/assets/icons/envelope.svg"
                   alt="E-mail"
                 />
               </a>
