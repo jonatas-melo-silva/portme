@@ -8,7 +8,7 @@ import { defineConfig } from 'vite'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
-  base: '/',
+  base: '/portme/',
   build: {
     outDir: 'dist',
     emptyOutDir: true,
