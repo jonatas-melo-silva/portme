@@ -10,7 +10,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 export default defineConfig({
   base: '/portme/',
   build: {
-    outDir: 'dist',
+    outDir: 'portme',
     emptyOutDir: true,
     rollupOptions: {
       input: {
